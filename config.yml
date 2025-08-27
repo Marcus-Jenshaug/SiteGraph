@@ -1,0 +1,50 @@
+# Configuration for the LinkMap crawler.
+# This file is used to define the settings for a crawl session.
+
+# The root URL to start crawling from. This is a required parameter.
+start_url: "https://books.toscrape.com/"
+
+# Whether to include subdomains of the start_url in the crawl.
+include_subdomains: false
+
+# The maximum number of pages to crawl.
+max_pages: 10
+
+# The maximum click depth from the start_url.
+max_depth: 5
+
+# The number of parallel requests to make.
+concurrency: 4
+
+# Whether to use a headless browser to render JavaScript.
+# If false, the crawler will use a simple HTTP client (faster).
+render_js: true
+
+# Whether to respect the rules defined in the website's robots.txt file.
+respect_robots: true
+
+# The delay in milliseconds between requests to the same domain.
+crawl_delay_ms: 200
+
+# A list of URL path prefixes (regex) to include in the crawl.
+# If specified, only URLs matching these paths will be crawled.
+allowed_paths:
+  - "/"
+
+# A list of URL path prefixes (regex) to exclude from the crawl.
+blocked_paths: []
+
+# Optional HTTP headers or cookies for authentication.
+# auth:
+#   headers:
+#     Authorization: "Bearer your_token"
+#   cookies:
+#     session_id: "your_session_id"
+
+# The language for the report UI. Supports 'en-US' and 'nb-NO'.
+language: "en-US"
+
+# A list of query parameters to mask in the final report for security.
+mask_query_params:
+  - "token"
+  - "session"

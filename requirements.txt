@@ -4,3 +4,5 @@ beautifulsoup4
 SQLAlchemy
 Jinja2
 lxml
+PyYAML
+playwright
