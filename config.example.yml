@@ -1,0 +1,21 @@
+# This file is a placeholder for future configuration.
+# The application does not yet read from this file.
+
+# Example configuration based on project specification:
+start_url: "https://www.dittdomene.no/"
+include_subdomains: false
+max_pages: 10000
+max_depth: 10
+concurrency: 8
+render_js: true
+respect_robots: true
+crawl_delay_ms: 300
+allowed_paths:
+  - "/"
+blocked_paths:
+  - "/login"
+  - "/admin"
+mask_query_params:
+  - "token"
+  - "auth"
+language: "nb-NO"

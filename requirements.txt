@@ -1,0 +1,6 @@
+click
+requests
+beautifulsoup4
+SQLAlchemy
+Jinja2
+lxml
